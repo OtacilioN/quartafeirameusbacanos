@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html class="gr__equartafeirameusbacanos_com"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+        <title>É quarta-feira, meus bacanos?</title>
+
+        <meta name="title" content="É quarta-feira, meus bacanos?">
+        <meta property="og:title" content="É quarta-feira, meus bacanos?">
+        <meta property="og:site_name" content="É quarta-feira, meus bacanos?">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="Descubra se é quarta-feira, meus bacanos">
+        <meta name="description" content="Descubra se é quarta-feira, meus bacanos">
+        <meta property="og:image" content="">
+        <meta property="og:url" content="">
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="É quarta-feira, meus bacanos?">
+        <meta name="twitter:description" content="Descubra se é quarta-feira, meus bacanos">
+        <meta name="twitter:image:src" content="">
+
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="theme-color" content="#ffffff">
+
+        <link href="./meusbacanos__files/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+        <style>
+        html {
+            padding:0;
+            margin:0;
+            height:100%;
+        }
+        body {
+            height:100%;
+            padding:0;
+            margin:0;
+            background-color:#FFF;
+        }
+        img {
+            display:block;
+            width:100%;
+            height:auto;
+            margin:0 auto;
+        }
+
+        .people {
+            position:fixed;bottom:0;left:15px;text-align:left;line-height:1em;font-size:12px;
+            font-family:Helvetica, Arial, sans-serif;
+            color:#BBB;
+        }
+        .people a {
+            color:#999;
+            text-decoration: none;
+        }
+        .people a:hover {
+            color:#666;
+        }
+        .share {
+            z-index:1000;position:fixed;bottom:0;right:15px;text-align:right;line-height:1em;font-size:16px;
+            color:#BBB;
+        }
+        .share a {
+            color:#999;
+            text-decoration: none;
+        }
+        .share a:hover {
+            color:#666;
+        }
+
+        #holder {
+            width:100%;
+            height:100%;
+            background-size:contain;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            position: absolute;
+            top:50%;
+            left:50%;
+            -webkit-transform:translate(-50%,-50%);
+            transform:translate(-50%,-50%);
+
+        }
+        #outerholder {
+            width:100%;
+            height:100%;
+            min-height:320px;
+            min-width:320px;
+            position: relative;
+        }
+
+
+        </style>
+    </head>
+    <body data-gr-c-s-loaded="true">
+
+        <div id="outerholder"><div id="holder" style="background-image: url(&quot;is.jpg&quot;);"></div></div>
+
+        <script src="./meusbacanos__files/jquery-3.1.1.min.js.download"></script>
+        <script>
+
+
+        function checkifitsWednesday() {
+            var now = new Date();
+            if (now.getDay() === 3) {
+                document.getElementById('holder').style.backgroundImage = 'url(is.jpg)';
+            } else {
+                document.getElementById('holder').style.backgroundImage = 'url(not.jpg)';
+            }
+        }
+        checkifitsWednesday();
+        var x = setInterval(checkifitsWednesday, 2000);
+
+        </script>
+    
+</body></html>
